@@ -6,19 +6,19 @@ export default function App() {
 		<View style={styles.container}>
 			<Text style={[styles.header, styles.text]}>Albums</Text>
 			<View style={styles.albumLayout}>
-				<View style={{ width: "100%", flex: 1 }}>
+				<View style={styles.albumComponent}>
 					<Image style={styles.albumImage} source={require("./assets/album.png")} />
 					<Text style={styles.text}>Album name</Text>
 				</View>
-				<View style={{ width: "100%", flex: 1 }}>
+				<View style={styles.albumComponent}>
 					<Image style={styles.albumImage} source={require("./assets/album.png")} />
 					<Text style={styles.text}>Album name</Text>
 				</View>
-				<View style={{ width: "100%", flex: 1 }}>
+				<View style={styles.albumComponent}>
 					<Image style={styles.albumImage} source={require("./assets/album.png")} />
 					<Text style={styles.text}>Album name</Text>
 				</View>
-				<View style={{ width: "100%", flex: 1 }}>
+				<View style={styles.albumComponent}>
 					<Image style={styles.albumImage} source={require("./assets/album.png")} />
 					<Text style={styles.text}>Album name</Text>
 				</View>
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
 	},
 	header: { fontSize: 20, fontWeight: 500 },
 	text: { fontSize: 15 },
-	albumImage: { height: 100, width: 100, borderWidth: 2, borderColor: "#000" },
+	albumComponent: { width: "100%", flex: 1 },
 	albumLayout: { flexDirection: "row", flexWrap: "wrap" },
+	albumImage: { height: 100, width: 100, borderWidth: 2, borderColor: "#000" },
 });
