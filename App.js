@@ -35,9 +35,25 @@ const styles = StyleSheet.create({
 		paddingLeft: 50,
 		paddingRight: 50,
 	},
-	header: { fontSize: 20, fontWeight: 500 },
+	header: {
+		fontSize: 20,
+		fontWeight: 500,
+	},
 	text: { fontSize: 15 },
-	albumLayout: { flexDirection: "row", flexWrap: "wrap" },
-	albumComponent: { flex: 1, flexDirection: "column", flexWrap: "wrap" },
-	albumImage: { height: 100, width: "100%", borderWidth: 2, borderColor: "#000" },
+	albumLayout: {
+		flexDirection: "row",
+		flexWrap: "wrap",
+		columnGap: 10,
+	},
+	albumComponent: {
+		flex: 1,
+		flexDirection: "column",
+		flexWrap: "wrap",
+	},
+	albumImage: {
+		height: 100,
+		width: "100%",
+		borderWidth: 2,
+		borderColor: "#000",
+	},
 });
