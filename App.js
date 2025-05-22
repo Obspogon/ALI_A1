@@ -39,5 +39,5 @@ const styles = StyleSheet.create({
 	text: { fontSize: 15 },
 	albumLayout: { flexDirection: "row", flexWrap: "wrap" },
 	albumComponent: { flex: 1, flexDirection: "column", flexWrap: "wrap" },
-	albumImage: { height: 100, width: 100, borderWidth: 2, borderColor: "#000" },
+	albumImage: { height: 100, width: "100%", borderWidth: 2, borderColor: "#000" },
 });
