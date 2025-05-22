@@ -31,11 +31,13 @@ export default function App() {
 const styles = StyleSheet.create({
 	container: {
 		backgroundColor: "#fff",
-		padding: 50,
+		paddingTop: 50,
+		paddingLeft: 50,
+		paddingRight: 50,
 	},
 	header: { fontSize: 20, fontWeight: 500 },
 	text: { fontSize: 15 },
-	albumComponent: { width: "100%", flex: 1 },
 	albumLayout: { flexDirection: "row", flexWrap: "wrap" },
+	albumComponent: { flex: 1, flexDirection: "column", flexWrap: "wrap" },
 	albumImage: { height: 100, width: 100, borderWidth: 2, borderColor: "#000" },
 });
