@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
 	},
 	text: { fontSize: 15 },
 	albumLayout: {
+		flex: 1,
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
