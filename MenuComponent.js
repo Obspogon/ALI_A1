@@ -1,9 +1,9 @@
 import { StyleSheet, View, Text } from "react-native";
 
-export default function MenuComponent() {
+export default function MenuComponent(props) {
 	return (
 		<View style={styles.menuComponent}>
-			<Text style={styles.text}>Tab</Text>
+			<Text style={styles.text}>{props.text}</Text>
 		</View>
 	);
 }
@@ -14,6 +14,6 @@ const styles = StyleSheet.create({
 		padding: 10,
 		alignItems: "center",
 		backgroundColor: "#555",
-		borderRadius: 50,
+		borderRadius: 20,
 	},
 });

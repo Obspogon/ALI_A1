@@ -1,15 +1,21 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import MenuComponent from "./MenuComponent";
 import MixComponent from "./MixComponent";
 import AlbumComponent from "./AlbumComponent";
 
 export default function App() {
 	return (
-		<View style={styles.container}>
+		<ScrollView style={styles.container}>
 			<View style={styles.menuBar}>
-				<MenuComponent />
-				<MenuComponent />
+				<MenuComponent text="All" />
+				<MenuComponent text="Mixes" />
+				<MenuComponent text="Albums" />
+			</View>
+			<Text style={[styles.header, styles.text]}>Mixes</Text>
+			<View>
+				<MixComponent />
+				<MixComponent />
 			</View>
 			<Text style={[styles.header, styles.text]}>Albums</Text>
 			<View style={styles.albumLayout}>
@@ -19,7 +25,7 @@ export default function App() {
 				<AlbumComponent />
 			</View>
 			<StatusBar style="auto" />
-		</View>
+		</ScrollView>
 	);
 }
 
@@ -38,6 +44,8 @@ const styles = StyleSheet.create({
 	text: { fontSize: 15 },
 	menuBar: {
 		flexDirection: "row",
+		justifyContent: "flex-start",
+		gap: 5,
 		flexWrap: "nowrap",
 	},
 	albumLayout: {
