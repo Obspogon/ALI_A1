@@ -10,10 +10,8 @@ export default function MenuComponent() {
 
 const styles = StyleSheet.create({
 	menuComponent: {
-		flex: 1,
-		flexDirection: "row",
-		flexWrap: "nowrap",
-		justifyContent: "space-between",
+		// height: 20,
+		padding: 10,
 		alignItems: "center",
 		backgroundColor: "#555",
 		borderRadius: 50,

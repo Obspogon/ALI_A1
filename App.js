@@ -7,6 +7,10 @@ import AlbumComponent from "./AlbumComponent";
 export default function App() {
 	return (
 		<View style={styles.container}>
+			<View style={styles.menuBar}>
+				<MenuComponent />
+				<MenuComponent />
+			</View>
 			<Text style={[styles.header, styles.text]}>Albums</Text>
 			<View style={styles.albumLayout}>
 				<AlbumComponent />
@@ -32,7 +36,12 @@ const styles = StyleSheet.create({
 		fontWeight: 500,
 	},
 	text: { fontSize: 15 },
+	menuBar: {
+		flexDirection: "row",
+		flexWrap: "nowrap",
+	},
 	albumLayout: {
+		flex: 1,
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
