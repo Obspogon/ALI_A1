@@ -38,12 +38,12 @@ export default function App() {
 				</View>
 				<Text style={[styles.text, styles.header]}>Audiobooks</Text>
 				<View style={styles.albumLayout}>
-					<AudiobookComponent name="Sherlock" />
+					<AudiobookComponent name="Sherlock Hol..." />
 					<AudiobookComponent name="Playing with..." />
 					<AudiobookComponent name="In The End" />
-					<AudiobookComponent name="Pride &..." />
+					<AudiobookComponent name="Pride & Pred..." />
 					<AudiobookComponent name="What Happ..." />
-					<AudiobookComponent name="How to..." />
+					<AudiobookComponent name="How to Build..." />
 				</View>
 				<StatusBar style="auto" />
 			</ScrollView>
