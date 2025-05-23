@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		flexWrap: "nowrap",
 		alignItems: "center",
-		backgroundColor: "#555",
+		backgroundColor: "lightblue",
 		borderRadius: 10,
 		padding: 7,
 		gap: 5,

@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 		// height: 20,
 		padding: 10,
 		alignItems: "center",
-		backgroundColor: "#555",
+		backgroundColor: "lightblue",
 		borderRadius: 20,
 	},
 });
