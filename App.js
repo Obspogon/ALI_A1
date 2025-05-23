@@ -22,7 +22,6 @@ export default function App() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		flexWrap: "wrap",
 		backgroundColor: "#fff",
 		paddingTop: 50,
 		paddingLeft: 50,
@@ -34,7 +33,6 @@ const styles = StyleSheet.create({
 	},
 	text: { fontSize: 15 },
 	albumLayout: {
-		flex: 1,
 		flexDirection: "row",
 		flexWrap: "wrap",
 		justifyContent: "space-between",

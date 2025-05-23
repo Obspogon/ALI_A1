@@ -10,11 +10,7 @@ export default function AlbumComponent() {
 }
 
 const styles = StyleSheet.create({
-	albumComponent: {
-		flex: 1,
-		flexDirection: "column",
-		flexWrap: "wrap",
-	},
+	albumComponent: {},
 	albumImage: {
 		height: 100,
 		width: 100,
