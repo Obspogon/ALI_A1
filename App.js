@@ -1,5 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
+import MenuComponent from "./MenuComponent";
+import MixComponent from "./MixComponent";
 import AlbumComponent from "./AlbumComponent";
 
 export default function App() {
