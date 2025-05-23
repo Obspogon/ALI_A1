@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
 	albumComponent: {},
 	text: { fontSize: 15, color: "#fff" },
 	albumImage: {
-		height: 100,
-		width: 100,
+		height: 80,
+		width: 80,
 		borderWidth: 2,
 		borderColor: "#000",
 	},

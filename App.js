@@ -1,8 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
 import MenuComponent from "./MenuComponent";
 import MixComponent from "./MixComponent";
 import AlbumComponent from "./AlbumComponent";
+import AudiobookComponent from "./AudiobookComponent";
 
 export default function App() {
 	return (
@@ -26,9 +27,20 @@ export default function App() {
 				<AlbumComponent name="Undertale OST" />
 				<AlbumComponent name="Bad" />
 				<AlbumComponent name="In The End" />
+				<AlbumComponent name="The Killers" />
 				<AlbumComponent name="Deltarune OST" />
+				<AlbumComponent name="Help" />
 			</View>
 			<Text style={[styles.text, styles.header]}>Audiobooks</Text>
+			<View style={styles.albumLayout}>
+				<AudiobookComponent name="Undertale OST" />
+				<AudiobookComponent name="Bad" />
+				<AudiobookComponent name="In The End" />
+				<AudiobookComponent name="Deltarune OST" />
+				<AudiobookComponent name="Deltarune OST" />
+				<AudiobookComponent name="Deltarune OST" />
+			</View>
+
 			<StatusBar style="auto" />
 		</ScrollView>
 	);
@@ -41,6 +53,7 @@ const styles = StyleSheet.create({
 		paddingTop: 50,
 		paddingLeft: 50,
 		paddingRight: 50,
+		paddingBottom: 500,
 	},
 	header: {
 		fontSize: 20,
@@ -64,7 +77,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 		flexDirection: "row",
 		flexWrap: "wrap",
-		justifyContent: "space-between",
+		justifyContent: "space-around",
 		alignItems: "center",
 	},
 });
