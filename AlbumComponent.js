@@ -1,10 +1,10 @@
 import { StyleSheet, View, Image, Text } from "react-native";
 
-export default function AlbumComponent() {
+export default function AlbumComponent(props) {
 	return (
 		<View style={styles.albumComponent}>
 			<Image style={styles.albumImage} source={require("./assets/album.png")} />
-			<Text style={styles.text}>Album name</Text>
+			<Text style={styles.text}>{props.name}</Text>
 		</View>
 	);
 }

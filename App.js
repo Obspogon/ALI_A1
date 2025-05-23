@@ -11,22 +11,24 @@ export default function App() {
 				<MenuComponent text="All" />
 				<MenuComponent text="Mixes" />
 				<MenuComponent text="Albums" />
+				<MenuComponent text="Audiobooks" />
 			</View>
 			<Text style={[styles.text, styles.header]}>Mixes</Text>
 			<View style={styles.mixLayout}>
-				<MixComponent />
-				<MixComponent />
-				<MixComponent />
-				<MixComponent />
-				<MixComponent />
+				<MixComponent name="For You" />
+				<MixComponent name="Trending" />
+				<MixComponent name="Friends Mix" />
+				<MixComponent name="Rock" />
+				<MixComponent name="Pop" />
 			</View>
 			<Text style={[styles.text, styles.header]}>Albums</Text>
 			<View style={styles.albumLayout}>
-				<AlbumComponent />
-				<AlbumComponent />
-				<AlbumComponent />
-				<AlbumComponent />
+				<AlbumComponent name="Undertale OST" />
+				<AlbumComponent name="Bad" />
+				<AlbumComponent name="In The End" />
+				<AlbumComponent name="Deltarune OST" />
 			</View>
+			<Text style={[styles.text, styles.header]}>Audiobooks</Text>
 			<StatusBar style="auto" />
 		</ScrollView>
 	);
