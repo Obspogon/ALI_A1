@@ -9,12 +9,15 @@ export default function App() {
 	return (
 		<View style={styles.container}>
 			<ScrollView>
-				<View style={styles.menuBar}>
-					<MenuComponent text="All" />
-					<MenuComponent text="Mixes" />
-					<MenuComponent text="Albums" />
-					<MenuComponent text="Audiobooks" />
-				</View>
+				<ScrollView horizontal={true}>
+					<View style={styles.menuBar}>
+						<MenuComponent text="All" />
+						<MenuComponent text="Mixes" />
+						<MenuComponent text="Albums" />
+						<MenuComponent text="Audiobooks" />
+						<MenuComponent text="What's Hot Now" />
+					</View>
+				</ScrollView>
 				<Text style={[styles.text, styles.header]}>Mixes</Text>
 				<View style={styles.mixLayout}>
 					<MixComponent name="For You" />
@@ -70,7 +73,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 		flexDirection: "row",
 		flexWrap: "wrap",
-		justifyContent: "space-between",
+		justifyContent: "space-evenly",
 		gap: 5,
 	},
 	albumLayout: {
