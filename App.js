@@ -1,27 +1,16 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
+import AlbumComponent from "./AlbumComponent";
 
 export default function App() {
 	return (
 		<View style={styles.container}>
 			<Text style={[styles.header, styles.text]}>Albums</Text>
 			<View style={styles.albumLayout}>
-				<View style={styles.albumComponent}>
-					<Image style={styles.albumImage} source={require("./assets/album.png")} />
-					<Text style={styles.text}>Album name</Text>
-				</View>
-				<View style={styles.albumComponent}>
-					<Image style={styles.albumImage} source={require("./assets/album.png")} />
-					<Text style={styles.text}>Album name</Text>
-				</View>
-				<View style={styles.albumComponent}>
-					<Image style={styles.albumImage} source={require("./assets/album.png")} />
-					<Text style={styles.text}>Album name</Text>
-				</View>
-				<View style={styles.albumComponent}>
-					<Image style={styles.albumImage} source={require("./assets/album.png")} />
-					<Text style={styles.text}>Album name</Text>
-				</View>
+				<AlbumComponent />
+				<AlbumComponent />
+				<AlbumComponent />
+				<AlbumComponent />
 			</View>
 			<StatusBar style="auto" />
 		</View>
@@ -48,16 +37,5 @@ const styles = StyleSheet.create({
 		flexWrap: "wrap",
 		justifyContent: "space-between",
 		alignItems: "center",
-	},
-	albumComponent: {
-		flex: 1,
-		flexDirection: "column",
-		flexWrap: "wrap",
-	},
-	albumImage: {
-		height: 100,
-		width: "100%",
-		borderWidth: 2,
-		borderColor: "#000",
 	},
 });
