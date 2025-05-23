@@ -10,7 +10,12 @@ export default function AudiobookComponent(props) {
 }
 
 const styles = StyleSheet.create({
-	text: { fontSize: 15, color: "#fff" },
+	audiobookComponent: {
+		padding: 7,
+		backgroundColor: "lightblue",
+		borderRadius: 10,
+	},
+	text: { fontSize: 15, color: "#000" },
 	audiobookImage: {
 		height: 100,
 		width: 100,
