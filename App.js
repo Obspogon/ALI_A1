@@ -12,12 +12,15 @@ export default function App() {
 				<MenuComponent text="Mixes" />
 				<MenuComponent text="Albums" />
 			</View>
-			<Text style={[styles.header, styles.text]}>Mixes</Text>
-			<View>
+			<Text style={[styles.text, styles.header]}>Mixes</Text>
+			<View style={styles.mixLayout}>
+				<MixComponent />
+				<MixComponent />
+				<MixComponent />
 				<MixComponent />
 				<MixComponent />
 			</View>
-			<Text style={[styles.header, styles.text]}>Albums</Text>
+			<Text style={[styles.text, styles.header]}>Albums</Text>
 			<View style={styles.albumLayout}>
 				<AlbumComponent />
 				<AlbumComponent />
@@ -32,7 +35,7 @@ export default function App() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#fff",
+		backgroundColor: "#000",
 		paddingTop: 50,
 		paddingLeft: 50,
 		paddingRight: 50,
@@ -41,12 +44,19 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		fontWeight: 500,
 	},
-	text: { fontSize: 15 },
+	text: { fontSize: 15, color: "#fff" },
 	menuBar: {
 		flexDirection: "row",
 		justifyContent: "flex-start",
 		gap: 5,
 		flexWrap: "nowrap",
+	},
+	mixLayout: {
+		flex: 1,
+		flexDirection: "row",
+		flexWrap: "wrap",
+		justifyContent: "space-between",
+		gap: 5,
 	},
 	albumLayout: {
 		flex: 1,

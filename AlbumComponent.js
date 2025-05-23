@@ -11,6 +11,7 @@ export default function AlbumComponent() {
 
 const styles = StyleSheet.create({
 	albumComponent: {},
+	text: { fontSize: 15, color: "#fff" },
 	albumImage: {
 		height: 100,
 		width: 100,
