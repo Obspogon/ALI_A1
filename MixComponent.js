@@ -11,6 +11,7 @@ export default function MixComponent(props) {
 
 const styles = StyleSheet.create({
 	mixComponent: {
+		flex: 1,
 		flexDirection: "row",
 		flexWrap: "nowrap",
 		alignItems: "center",

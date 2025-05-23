@@ -18,29 +18,29 @@ export default function App() {
 			<View style={styles.mixLayout}>
 				<MixComponent name="For You" />
 				<MixComponent name="Trending" />
-				<MixComponent name="Friends Mix" />
+				<MixComponent name="Friends" />
 				<MixComponent name="Rock" />
-				<MixComponent name="Pop" />
+				<MixComponent name="Pop Punk" />
+				<MixComponent name="OST" />
 			</View>
 			<Text style={[styles.text, styles.header]}>Albums</Text>
 			<View style={styles.albumLayout}>
-				<AlbumComponent name="Undertale OST" />
+				<AlbumComponent name="Underta..." />
 				<AlbumComponent name="Bad" />
 				<AlbumComponent name="In The End" />
 				<AlbumComponent name="The Killers" />
-				<AlbumComponent name="Deltarune OST" />
+				<AlbumComponent name="Deltaru..." />
 				<AlbumComponent name="Help" />
 			</View>
 			<Text style={[styles.text, styles.header]}>Audiobooks</Text>
 			<View style={styles.albumLayout}>
-				<AudiobookComponent name="Undertale OST" />
-				<AudiobookComponent name="Bad" />
+				<AudiobookComponent name="Sherlock" />
+				<AudiobookComponent name="Playing with..." />
 				<AudiobookComponent name="In The End" />
-				<AudiobookComponent name="Deltarune OST" />
-				<AudiobookComponent name="Deltarune OST" />
-				<AudiobookComponent name="Deltarune OST" />
+				<AudiobookComponent name="Pride &..." />
+				<AudiobookComponent name="What Happ..." />
+				<AudiobookComponent name="How to..." />
 			</View>
-
 			<StatusBar style="auto" />
 		</ScrollView>
 	);
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 	},
 	header: {
 		fontSize: 20,
-		fontWeight: 500,
+		fontStyle: "bold",
 	},
 	text: { fontSize: 15, color: "#fff" },
 	menuBar: {
