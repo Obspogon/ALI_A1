@@ -1,12 +1,12 @@
 import { StyleSheet, View, Text } from "react-native";
 
-export default function MenuComponent(props) {
+const MenuComponent = (props) => {
 	return (
 		<View style={styles.menuComponent}>
 			<Text style={styles.text}>{props.text}</Text>
 		</View>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	menuComponent: {
@@ -17,3 +17,4 @@ const styles = StyleSheet.create({
 		borderRadius: 20,
 	},
 });
+export default MenuComponent;

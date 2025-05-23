@@ -1,13 +1,13 @@
 import { StyleSheet, View, Text, Image } from "react-native";
 
-export default function AudiobookComponent(props) {
+const AudiobookComponent = (props) => {
 	return (
 		<View style={styles.audiobookComponent}>
 			<Image style={styles.albumImage} source={require("./assets/book.png")} />
 			<Text style={styles.text}>{props.name}</Text>
 		</View>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	audiobookComponent: {
@@ -23,3 +23,4 @@ const styles = StyleSheet.create({
 		borderColor: "#000",
 	},
 });
+export default AudiobookComponent;

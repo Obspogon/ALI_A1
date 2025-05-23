@@ -1,13 +1,13 @@
 import { StyleSheet, View, Image, Text } from "react-native";
 
-export default function MixComponent(props) {
+const MixComponent = (props) => {
 	return (
 		<View style={styles.mixComponent}>
 			<Image style={styles.mixImage} source={require("./assets/album.png")} />
 			<Text style={styles.text}>{props.name}</Text>
 		</View>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	mixComponent: {
@@ -25,3 +25,4 @@ const styles = StyleSheet.create({
 		width: 25,
 	},
 });
+export default MixComponent;

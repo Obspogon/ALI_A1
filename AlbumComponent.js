@@ -1,13 +1,13 @@
 import { StyleSheet, View, Image, Text } from "react-native";
 
-export default function AlbumComponent(props) {
+const AlbumComponent = (props) => {
 	return (
 		<View style={styles.albumComponent}>
 			<Image style={styles.albumImage} source={require("./assets/album.png")} />
 			<Text style={styles.text}>{props.name}</Text>
 		</View>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	albumComponent: {},
@@ -19,3 +19,4 @@ const styles = StyleSheet.create({
 		borderColor: "#000",
 	},
 });
+export default AlbumComponent;
